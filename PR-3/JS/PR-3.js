@@ -188,6 +188,8 @@ console.log(" 08 write a JS program that displaya 1-2-3-4-5-6-7-8-9-10 on one li
     s += " " + i;
 }
 console.log(s);
+
+
 }
 // output: 1 2 3 4 5 6 7 8
 
