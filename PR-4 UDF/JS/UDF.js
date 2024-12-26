@@ -3,10 +3,16 @@
 console.log("1. Write a JAVASCRIPT Program to print a greeting message using with argument no return type function when call a function without argument at that time print message Good Morning.");
 
 function greet(x) {
-    console.log("Good Morning");
+    if (x == null) {
+        console.log("Good Morning");
+        
+    }else{
+
+        console.log("Invelid Input....");
+    }
 
 }
-greet(5);
+greet();
 
 // output:
 // Good Morning
