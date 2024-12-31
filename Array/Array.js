@@ -44,6 +44,6 @@ data.forEach((valu,index)=>{
 })
 
 console.log("map",  i);     
-
+[]
 
     
