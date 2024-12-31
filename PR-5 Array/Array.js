@@ -293,3 +293,5 @@ console.log("15. write a JavaScript program to convert an array to string.");
 
 let Arr = ['5', 32, 'Daniel'];
 console.log(Arr.join(","));
+
+// output: 5,32,Daniel
