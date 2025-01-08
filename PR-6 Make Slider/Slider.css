@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'satoshi-medium', sans-serif;
+    display: block;
+    overflow-x: hidden;
+    background-color: rgba(212, 255, 252, .7);
+    z-index: -1;
+    position: relative;
+}
+
+.container {
+    
+    height: 100%;
+    max-width: 1235px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    /* display: flex; */
+    text-align: center;
+    padding: 200px;
+    position: relative;
+    background-color:#ffae00 ;
+    height: 500px;
+    margin: 100px;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #ffae00;
+    border: none;
+    
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #ffae00;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-solid{
+    font-size: 50px;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 20px;
+    border: none;
+    background-color: #ffae00;
+    border: none;
+    cursor: pointer;
+    
+}
+
+h1{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5;
+}
