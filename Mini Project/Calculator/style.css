@@ -27,6 +27,8 @@ body {
     font-size: 2.5rem;
     overflow-x: auto;
     transition: all .2s ease-in-out;
+    color: black;
+    width: 95%;
   }
   
   .input:hover {
