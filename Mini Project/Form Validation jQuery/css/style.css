@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    width: 30%;
+    height: 100vh;
+    margin: 80px auto;
+  }
+  .container {
+    background: #ffffff;
+    padding: 20px 40px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  .container h3 {
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-group .gender-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-group .gender-options label {
+    font-weight: normal;
+  }
+  .form-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  .submit-btn {
+    width: 105%;
+    padding: 10px;
+    border: none;
+    background: #38548f;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .cheack-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+  }
+  .submit-btn:hover {
+    background: #000;
+  }
+  .error-message{
+    color: #ff0000;
+  }
