@@ -163,6 +163,11 @@ function loaddata(id) {
     document.getElementById("topics").innerHTML = `-${quotes[id].topics}`;
 
 }
+setInterval(()=> {
+    nextQuotes();
+}, 1000)
+
+
 loaddata(index);
 
 
