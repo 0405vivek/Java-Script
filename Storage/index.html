@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="add-employee" align="center">
+      <h2>Add New Employee</h2>
+      <form id="addEmp" >
+        <table>
+          <tr>
+            <td>Full Name</td>
+            <td><input type="text" id="fname" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" id="email" /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="text" id="password" /></td>
+          </tr>
+          <tr>
+            <td>Mobile No</td>
+            <td><input type="text" id="mobileNo" /></td>
+          </tr>
+          <tr>
+            <td>Role</td>
+            <td><input type="text" id="role" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Add Emplyoee" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div id="edit-employee" align="center" style="display: none;">
+      <h2>Edit Employee</h2>
+      <form id="editEmp" >
+        <table>
+          <tr>
+            <td>Full Name</td>
+            <td><input type="text" id="efname" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" id="eemail" /></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="text" id="epassword" /></td>
+          </tr>
+          <tr>
+            <td>Mobile No</td>
+            <td><input type="text" id="emobileNo" /></td>
+          </tr>
+          <tr>
+            <td>Role</td>
+            <td><input type="text" id="erole" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Update Emplyoee" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div id="view-employees" align="center">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile No</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="viewData">
+
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
