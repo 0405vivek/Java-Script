@@ -156,7 +156,7 @@ body {
     right: 0;
     position: absolute;
   }
-  
+
     .submit-btn {
     width: 100%;
     padding: 10px;
@@ -223,7 +223,7 @@ body {
 .product-description {
     font-size: 15px;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 
 

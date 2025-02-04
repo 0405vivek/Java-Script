@@ -1,4 +1,3 @@
-
 document.querySelector("#ProductForm").addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -29,9 +28,9 @@ function loadData() {
     let result = "";
     allData.forEach((record, index) => {
         let row = `
-            <div class="product-card">
+            <div class="product" data-index="${index}">
+                <div class="product-card ">
                 <div class="product-image">
-               
                     <img src="${record.Product_image}" alt="${record.Product_name}" width="100">
                 </div>
                 <div class="product-info">
@@ -40,11 +39,25 @@ function loadData() {
                     <div class="product-price">${record.Price}</div>
                     <button class="product-btn">Add to Cart</button>
                 </div>
+                </div>
             </div>`;
         result += row;
     });
 
     document.querySelector(".products").innerHTML = result;
+
+    document.querySelectorAll(".product-btn").forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            let allData = JSON.parse(localStorage.getItem("Product")) || [];
+            let formData = allData[index];
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(formData);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert("Product added to cart");
+        });
+    });
 }
+
 
 loadData();
