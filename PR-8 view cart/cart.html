@@ -1,24 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="nav">
-        <ul class="nav-list">
-            <li><a href="index.html">Add Product</a></li>
-            <li><a href="cart.html">Cart</a></li>
-        </ul>
-    </div>
 
-    <div class="cart-items"></div>
-
-    <script src="cart.js"></script>
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,16 +11,26 @@
 <body>
     <div class="nav">
         <ul class="nav-list">
-            <li><a href="index.html">Add Product</a></li>
+            <!-- <li><a href="index.html">Add Product</a></li> -->
+            <li><a href="index.html" id="add-product"><img src="image/icons8-shopee-50.png" alt=""></a></li>
+            <!-- <li><a  href="cart.html"></i></a></li>  -->
             <li>
                 <a href="cart.html" class="cart-icon">
-                    🛒 <span class="cart-count">0</span>
+                    <img src="image/icons8-shopping-cart-64.png" alt="">
+                    <span class="cart-count">0</span>
+                    &nbsp; Cart    
                 </a>
             </li>
         </ul>
     </div>
 
-    <div class="cart-items"></div>
+
+    <div class="nav">
+        <ul class="nav-list">
+        </ul>
+    </div>
+
+    <div class="products"></div>
 
     <script src="cart.js"></script>
 </body>

@@ -28,10 +28,17 @@ function loadCartData() {
         });
     }
 
-    document.querySelector(".cart-items").innerHTML = result;
+    document.querySelector(".products").innerHTML = result;
 
-    loadCartData();
-    updateCartCount();
+    document.querySelectorAll(".remove-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            let index = e.target.dataset.index;
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            loadCartData();
+            updateCartCount();
+        });
+    });
 }
 
 updateCartCount();
